@@ -83,7 +83,9 @@ body {
     inset: 0;
     background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
     background-size: 50px 50px;
-    mask-image: radial-gradient(circle at center, black 20%, transparent 80%);}
+    mask-image: radial-gradient(circle at center, black 20%, transparent 80%);
+        Z-INDEX: -1;
+}
 .container {
 
     width: 94%;
