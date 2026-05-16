@@ -187,7 +187,14 @@ body {
     color: #fff;
 
 }
-
+.modal-box {
+    width: 100%;
+    max-width: 560px;
+    padding: 34px;
+    border-radius: 34px;
+    background: linear-gradient(180deg, rgb(0 19 64 / 96%), rgba(10, 16, 34, 0.97));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
 .search-box i {
 
     position: absolute;
