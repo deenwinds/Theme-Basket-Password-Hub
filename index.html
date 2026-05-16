@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Theme Basket Password Hub</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="https://theme-basket.com/wp-content/uploads/2026/05/tb.jpg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+    <div class="bg-glow glow1"></div>
+    <div class="bg-glow glow2"></div>
+
+    <div class="container">
+
+        <header class="topbar">
+
+            <div class="brand">
+
+                <img src="https://theme-basket.com/wp-content/uploads/2026/05/theme-basket-white-logo.png"
+                    class="logo" />
+
+                <div>
+
+                    <h1>
+                        Theme Basket Password Hub
+                    </h1>
+
+                    <p>
+                        Royal enterprise secure vault dashboard for Shopify, BigCommerce, WordPress, Hosting & Client
+                        Access.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="top-actions">
+
+                <div class="search-box">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input type="text" id="searchInput" placeholder="Search clients..." />
+
+                    <div class="suggestion-box" id="suggestionBox"></div>
+
+                </div>
+
+                <button class="add-btn" onclick="openModal()">
+                    <i class="fa-solid fa-plus"></i>
+                    Add Client
+                </button>
+
+            </div>
+
+        </header>
+
+        <section class="stats">
+
+            <div class="stat-card">
+                <i class="fa-brands fa-shopify"></i>
+                <h2 id="shopifyCount">1</h2>
+                <p>Shopify Stores</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fa-solid fa-store"></i>
+                <h2 id="bigcommerceCount">0</h2>
+                <p>BigCommerce</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fa-brands fa-wordpress"></i>
+                <h2 id="wordpressCount">0</h2>
+                <p>WordPress</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fa-solid fa-lock"></i>
+                <h2 id="vaultCount">1</h2>
+                <p>Secure Vaults</p>
+            </div>
+
+        </section>
+
+        <section class="vault-section">
+
+            <div class="section-head">
+
+                <h2>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    Protected Vault
+                </h2>
+
+                <div class="filters">
+
+                    <button class="filter active" data-filter="all">
+                        <i class="fa-solid fa-layer-group"></i>
+                        All
+                    </button>
+
+                    <button class="filter" data-filter="shopify">
+                        <i class="fa-brands fa-shopify"></i>
+                        Shopify
+                    </button>
+
+                    <button class="filter" data-filter="bigcommerce">
+                        <i class="fa-solid fa-store"></i>
+                        BigCommerce
+                    </button>
+
+                    <button class="filter" data-filter="wordpress">
+                        <i class="fa-brands fa-wordpress"></i>
+                        WordPress
+                    </button>
+
+                    <button class="filter" data-filter="woocommerce">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        WooCommerce
+                    </button>
+
+                    <button class="filter" data-filter="email">
+                        <i class="fa-solid fa-envelope"></i>
+                        Email
+                    </button>
+
+                    <button class="filter" data-filter="hostinger">
+                        <i class="fa-solid fa-cloud"></i>
+                        Hostinger
+                    </button>
+
+                    <button class="filter" data-filter="upwork">
+                        <i class="fa-brands fa-upwork"></i>
+                        Upwork
+                    </button>
+
+                    <button class="filter" data-filter="other">
+                        <i class="fa-solid fa-layer-group"></i>
+                        Other
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="card-grid" id="grid">
+
+                <div class="vault-card partner-card" data-category="shopify" data-partner="true">
+
+                    <div class="partner-badge">
+                        MAIN PARTNER
+                    </div>
+
+                    <div class="card-top">
+
+                        <div class="icon-box">
+                            <i class="fa-brands fa-shopify"></i>
+                        </div>
+
+                        <div class="card-badge">
+                            Shopify Partner
+                        </div>
+
+                    </div>
+
+                    <h3>
+                        Theme Basket Main Store
+                    </h3>
+
+                    <p>
+                        Premium Shopify enterprise partner dashboard with secure protected credential system.
+                    </p>
+
+                    <div class="active-tag">
+
+                        <div class="dot"></div>
+
+                        Active Client
+
+                    </div>
+
+                    <div class="card-info">
+
+                        <div class="info-row">
+                            <span>Email</span>
+                            <span>partner@themebasket.com</span>
+                        </div>
+
+                        <div class="info-row">
+                            <span>Password</span>
+                            <span class="password-mask">••••••••••</span>
+                        </div>
+
+                    </div>
+
+                    <div class="card-actions">
+
+                        <a href="https://theme-basket.com" target="_blank" class="visit-btn">
+                            Visit Store
+                        </a>
+
+                        <button class="icon-btn copy">
+                            <i class="fa-solid fa-copy"></i>
+                        </button>
+
+                        <button class="icon-btn delete remove">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- ADD MODAL -->
+
+    <div class="modal" id="modal">
+
+        <div class="modal-box">
+
+            <h2>Add New Client</h2>
+
+            <div class="field">
+                <label>Client Title *</label>
+                <input type="text" id="title">
+            </div>
+
+            <div class="field">
+                <label>Email *</label>
+                <input type="email" id="email">
+            </div>
+
+            <div class="field">
+                <label>Password *</label>
+                <input type="password" id="password">
+            </div>
+
+            <div class="field">
+                <label>Store URL</label>
+                <input type="url" id="url">
+            </div>
+
+            <div class="field">
+
+                <label>Category</label>
+
+                <select id="category">
+
+                    <option value="shopify">Shopify</option>
+                    <option value="bigcommerce">BigCommerce</option>
+                    <option value="wordpress">WordPress</option>
+                    <option value="woocommerce">WooCommerce</option>
+                    <option value="hosting">Hosting</option>
+                    <option value="upwork">Upwork</option>
+                    <option value="email">Email</option>
+                    <option value="other">Other</option>
+
+                </select>
+
+            </div>
+
+            <div class="field" id="otherCategoryWrap" style="display:none;">
+
+                <label>Custom Category</label>
+
+                <input type="text" id="otherCategory" placeholder="Example: Figma, AI Tool, CRM" />
+
+            </div>
+
+            <div class="field">
+
+                <label class="checkbox-wrap">
+
+                    <input type="checkbox" id="partnerCheckbox">
+
+                    Set As Main Partner
+
+                </label>
+
+            </div>
+
+            <div class="modal-actions">
+
+                <button class="primary-btn" onclick="addClient()">
+                    Add Client
+                </button>
+
+                <button class="secondary-btn" onclick="closeModal()">
+                    Close
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- PIN MODAL -->
+
+    <div class="modal" id="pinModal">
+
+        <div class="modal-box small">
+
+            <h2>Security Verification</h2>
+
+            <div class="field">
+                <label>Enter Security PIN</label>
+                <input type="password" id="pin">
+            </div>
+
+            <div class="modal-actions">
+
+                <button class="primary-btn" onclick="verifyAction()">
+                    Verify
+                </button>
+
+                <button class="secondary-btn" onclick="closePin()">
+                    Cancel
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
